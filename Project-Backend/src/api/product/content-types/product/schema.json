@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "producttitle": {
+      "type": "string",
+      "required": true
+    },
+    "productdescription": {
+      "type": "text"
+    },
+    "productimage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "productprice": {
+      "type": "decimal"
+    },
+    "whatsincluded": {
+      "type": "blocks"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Africa",
+        "Asia",
+        "Europe ",
+        "Australia",
+        "North America",
+        "Latin America"
+      ]
+    }
+  }
+}
